@@ -99,11 +99,11 @@ class TournamentController extends Controller
 
     }
 
- // public function listAllmatches()
- //    {
- //        $tournaments = Tournament::with('teams')->get();
+ public function listAllmatches()
+    {
+        $tournaments = Tournament::with('teams')->get();
    
- //       return view('sports.index', ['tournaments' => $tournaments]);
- //    }
+       return view('sports.index', ['tournaments' => $tournaments]);
+    }
 
 }

@@ -98,7 +98,7 @@
     <div class="site-section">
       <div class="container">
         <div class="row mb-5">
-            @foreach($team as $team)
+            @foreach($teams as $team)
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="post-entry">
               <div class="image">

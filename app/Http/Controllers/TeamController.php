@@ -25,8 +25,9 @@ class TeamController extends Controller
 
         $teams =  $this->team->create($request->all());
         
-
-       return view('cms', ['teams' => $teams]);
+$player = Player::all();
+ $tournament = Tournament::get();
+       return view('cms',  compact('teams', 'player', 'tournament'));
     }
 
     public function update(Request $request, $id)
@@ -61,7 +62,7 @@ class TeamController extends Controller
        $teams =  $this->team->listAll();
        $player = Player::all();
        $tournament = Tournament::all();
-       return view('cms', compact('teams', 'player', 'tournament'));
+       return view('team.allteams', compact('teams', 'player', 'tournament'));
     }
 
 
