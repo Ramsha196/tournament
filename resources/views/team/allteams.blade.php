@@ -76,8 +76,8 @@
             </li>
             <li><a href="{{url('api/tournament')}}">Matches</a></li>
             <li class="active"><a href="{{ url('api/team')}}">Team</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div>
       </nav>

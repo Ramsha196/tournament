@@ -50,5 +50,3 @@ Route::get('home', 'HomeController@Home');
 
 Route::get('sports/home', 'TournamentController@listAllmatches');
 
-
-
